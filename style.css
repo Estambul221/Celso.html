@@ -1,0 +1,211 @@
+/* Estilos globais */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  text-align: center;
+}
+
+/* Animação de fundo */
+@keyframes bgAnimation {
+  0% { background-color: #2c3e50; }
+  100% { background-color: #34495e; }
+}
+
+/* Header */
+header {
+  background: rgba(44, 62, 80, 0.9);
+  padding: 100px 20px;
+  position: relative;
+}
+
+.header-text {
+  font-size: 2.5rem;
+  animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out forwards;
+}
+
+/* Animações do header */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes moveUp {
+  from { transform: translateY(50px); }
+  to { transform: translateY(0); }
+}
+
+/* Seções */
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ecf0f1; /* Título em uma cor clara */
+}
+
+/* Estilos da seção Sobre Mim */
+#sobre {
+  background: rgba(46, 204, 113, 0.2);
+  color: #e0e3e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.sobre-img {
+  max-width: 400px;
+  height: auto;
+  margin-left: 30px;
+  border-radius: 30%;
+}
+
+.sobre-texto {
+  max-width: 600px; 
+  text-align: left; 
+}
+
+/* Estilos da seção Projetos */
+#projetos {
+  background: rgba(52, 73, 94, 0.7);
+  color: #ecf0f1;
+  padding: 50px;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.project-image {
+  max-width: 300px; 
+  height: auto;
+  margin-right: 20px;
+}
+
+.project-description {
+  max-width: 400px; 
+  text-align: left; 
+}
+
+
+/* Estilos da seção Portfólio */
+#portfolio {
+  background: rgba(44, 62, 80, 0.9);
+  padding: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.item {
+  background: rgba(231, 76, 60, 0.8); 
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px; 
+  text-align: center;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.item img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px; 
+}
+
+.item:hover {
+  transform: scale(1.05); 
+  background-color: rgb(60, 91, 231); 
+}
+
+/* Estilos da seção Contato */
+#contato {
+  background: rgba(44, 62, 80, 0.9);
+  padding: 50px;
+  color: #ecf0f1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e67e22; /* Laranja mais sóbrio */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #171757; /* Laranja escuro */
+}
+
+/* Footer */
+footer {
+  background: rgba(44, 62, 80, 0.9);
+  padding: 20px;
+  font-size: 0.8rem;
+}
+
+
+
+/* Estilos da Navegação */
+nav {
+  background: rgba(44, 62, 80, 0.9);
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #723c0d; /* Cor de destaque no hover */
+}
+
+
+
